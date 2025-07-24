@@ -102,6 +102,46 @@
   margin-top: 5px;
   margin-bottom: 10px;
 }
+/* Plant lover section */
+
+.plant-img {
+  position: relative;
+  width: 50%;
+}
+
+.trusted-badge {
+  position: absolute;
+  top: -70px;
+  right: -70px;
+}
+
+.trusted-badge img {
+  width: 200px;
+  height: auto;
+}
+
+.plant-lover {
+  display: flex;
+  gap: 50px;
+  padding: 100px;
+}
+
+.plant-lover-title h3 {
+  font-size: 3.12rem;
+  font-weight: 700;
+}
+.plant-lover-title ul {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+}
+.plant-lover-title li {
+  margin-top: 30px;
+}
+
+
+
 
 /* Responsive site */
 @media (max-width: 768px) {
@@ -140,7 +180,6 @@
     font-size: 0.8rem;
     font-weight: 400;
     padding: 10px 50px;
-    
   }
   .plant-card {
     grid-template-columns: repeat(2, 1fr);
@@ -162,5 +201,31 @@
   }
   .btn {
     padding: 16px 25px 16px 25px;
+  }
+  /* plant lover section */
+
+  .plant-lover {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+  .plant-img img {
+    width: 90vw;
+  }
+  .plant-lover-title h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  .plant-lover-title ul {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .line-breaker {
+    display: none;
   }
 }
