@@ -1,0 +1,36 @@
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* nav-logo */
+.nav-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+.nav-link ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.nav-link a {
+  text-decoration: none;
+  color: rgb(137, 135, 161);
+  font-size: 1rem;
+}
+
+
+/* Responsive site */
+@media (max-width: 768px) {
+  .nav-link{
+    display: none;
+  }
+}
