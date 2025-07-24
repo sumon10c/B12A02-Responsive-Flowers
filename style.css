@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -6,6 +10,13 @@
   font-variation-settings: "wdth" 100;
 }
 
+/* primary style */
+.primarty-color {
+  color: rgb(233, 90, 8);
+}
+.secondery-color {
+  color: rgba(0, 0, 0, 0.5);
+}
 /* nav-logo */
 .nav-logo {
   display: flex;
@@ -20,17 +31,60 @@
   display: flex;
   list-style: none;
   justify-content: space-evenly;
+  margin-left: 350px;
 }
 .nav-link a {
   text-decoration: none;
   color: rgb(137, 135, 161);
   font-size: 1rem;
 }
-
+/* Banner section */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.banner-title {
+  margin-top: 57px;
+}
+.banner-h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-p {
+  font-size: 1.3rem;
+}
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* Responsive site */
 @media (max-width: 768px) {
-  .nav-link{
+  .nav-link {
     display: none;
+  }
+  .nav-logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    padding: 20px;
+    text-align: center;
+  }
+  .banner-h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .banner-p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .break-line {
+    display: inline;
   }
 }
